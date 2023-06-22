@@ -1,13 +1,29 @@
-const input = prompt ('What is your name?')
-console.log(input)
+/*const name = prompt('What is your name?')
+console.log
 
-const result = alert('Hello John, how are you?')
-console.log(result)
-
-const yesOrNo = confirm('Your name is really John?')
-if (yesOrNo) {
-    alert('Yes, for sure')
-}
+if (name === null || name === '') {
+  alert('Hello, noname! How are you?')
+} 
 else {
-    alert('Hello noname. How are you?')
+  alert('Hello ' + name + '! How are you?')
+}*/
+
+/*const name = prompt('What is your name?')
+
+if (name === null && name === '') {
+  alert('Hello, noname! How are you?')
+}
+
+ else {
+  alert("Привіт, " + name + "! Як справи?")
+}*/
+
+const input = prompt('Hi friend, what is your name?')
+
+if (input.trim()) {
+  alert('Nice to meet you, ' + input.trim() + '! How are you?')
+}
+
+else {
+  alert('Error')
 }
